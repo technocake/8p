@@ -1,0 +1,1 @@
+sudo apt-get install libbsd-dev libncurses5-dev libvlc-dev libjansson-dev libcurl-dev libcurl14-openssl-dev libcurl4-openssl-dev libncursesw5-dev
