@@ -5,7 +5,7 @@
 
 #include <bsd/string.h>
 #include <err.h>
-#include <ncurses.h>
+#include <ncursesw/curses.h>
 #include <stdarg.h>
 #include <stdbool.h>
 #include <stdlib.h>

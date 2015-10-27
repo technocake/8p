@@ -122,13 +122,13 @@ search_search(struct info *data)
 	searchstr_clear(data);
 
 	/* Build url */
-	len = strlen("http://8tracks.com/mix_sets/") +
-	    strlen(data->search_str) + strlen("?include=mixes[liked]") + 1;
+	len = strlen("http://8tracks.com/explore/") +
+	    strlen(data->search_str) + strlen("?format=json&include=mixes[liked]") + 1;
 	url = malloc(len * sizeof(char));
 	if (url == NULL)
 		err(1, NULL);
 	(void)snprintf(url, len,
-	    "http://8tracks.com/mix_sets/%s?include=mixes[liked]",
+	    "http://8tracks.com/explore/%s?format=json&include=mixes[liked]",
 	    data->search_str);
 
 	/* Start the search */

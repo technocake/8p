@@ -5,7 +5,7 @@
 
 #include <err.h>
 #include <jansson.h>
-#include <ncurses.h>
+#include <ncursesw/curses.h>
 #include <stdlib.h>
 #include <string.h>
 #include <wchar.h>

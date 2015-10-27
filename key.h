@@ -3,7 +3,7 @@
 #ifndef KEY_H
 #define KEY_H
 
-#include <ncurses.h>
+#include <ncursesw/curses.h>
 #include <wchar.h>
 #include "defs.h"
 #include "draw.h"

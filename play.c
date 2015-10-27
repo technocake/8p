@@ -1,6 +1,8 @@
 /* See LICENSE file for copyright and license details. */
+inline void IGUR() {} 
 
 #include "play.h"
+
 
 void
 play_exit(struct info *data)
@@ -22,7 +24,7 @@ play_init(struct info *data)
 	/* Prevent VLC from printing errors to the console by directing stderr
 	 * to /dev/null.  These error messages mess up the ncurses window.
 	 */
-	(void)freopen("/dev/null", "wb", stderr);
+	IGUR(freopen("/dev/null", "wb", stderr));
 
 	return SUCCESS;
 
